@@ -1,3 +1,26 @@
-.styleApp{
-    border: solid red;
+@use './mixins/variables.module.scss' as variable;
+@use './mixins/mixins.module.scss' as mixins;
+
+
+
+.sectionContainerApp{
+    @include mixins.flex($direction: row, $justify: center, $align: center);
+    color: variable.$spam-text;
+    background-color: variable.$bg-color;
+    height: 6vh;
+    a{
+        cursor: pointer;
+        color: variable.$text-color;
+    }
+};
+
+.navApp{
+    @include mixins.flex($direction: row, $justify: center, $align: center);
+    width: 100%;
+};
+
+.ulApp{
+    @include mixins.flex($direction: row, $justify: space-around, $align: center);
+    width: 100%;
+    font-size: 2rem;
 }

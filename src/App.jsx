@@ -15,9 +15,10 @@ import S from './components/styles/styleApp.module.scss';
 
 function App() {
   return (
-    <BrowserRouter className={S.styleApp}>
-      <nav>
-        <ul>
+    <BrowserRouter>
+    <section className={S.sectionContainerApp}>
+    <nav className={S.navApp}>
+        <ul className={S.ulApp}>
           <li>
             <Link to='/'>
               Home
@@ -35,6 +36,7 @@ function App() {
           </li>
         </ul>
       </nav>
+    </section>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />

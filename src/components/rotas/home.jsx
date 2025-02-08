@@ -2,7 +2,11 @@ import React from 'react'
 
 function home() {
   return (
-    <div>home</div>
+    <section>
+        <h2>
+        Hello! I'm Lorrayne, a Front-end Developer
+        </h2>
+    </section>
   )
 }
 
