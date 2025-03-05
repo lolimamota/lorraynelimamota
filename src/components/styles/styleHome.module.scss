@@ -5,6 +5,7 @@
     @include mixins.flex($direction: column, $justify: center, $align: center);
     height: 94vh;
     border: solid red;
+    overflow: hidden;
 
     p{
         border: solid blue;
@@ -17,5 +18,8 @@
 
 .videoHome{
     border: solid blue;
-    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: contain;
 }
