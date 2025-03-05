@@ -9,10 +9,10 @@ import S from '../styles/styleHome.module.scss';
 function home() {
   return (
     <section className={S.sectionHome}>
-      <video autoPlay muted loop>
-        <source src={BgMobile}/>
+      <video autoPlay muted loop className={S.videoHome}>
+        <source src={BgMobile} type='video/mp4'/>
       </video>
-      <div className={S.h2Home}>
+      {/* <div className={S.h2Home}>
         <h2 className={S.h2Home}>
         Hello!
         </h2>
@@ -28,7 +28,7 @@ function home() {
         </p>
         <button>
           Let's get started
-        </button>
+        </button> */}
     </section>
   )
 }
