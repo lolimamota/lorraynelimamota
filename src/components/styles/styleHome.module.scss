@@ -9,11 +9,13 @@
 
     p{
         border: solid blue;
+        color: variable.$text-color;
     }
 }
 
 .h2Home{
     border: solid green;
+    color: variable.$text-color;
 }
 
 .videoHome{
@@ -28,4 +30,8 @@
 .content{
     position: relative;
     z-index: 1;
+}
+
+.span{
+    color: variable.$span-text;
 }

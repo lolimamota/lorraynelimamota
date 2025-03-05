@@ -5,7 +5,7 @@
 
 .sectionContainerApp{
     @include mixins.flex($direction: row, $justify: center, $align: center);
-    color: variable.$spam-text;
+    color: variable.$span-text;
     background-color: variable.$bg-color;
     width: 100%;
     height: 6vh;
@@ -25,4 +25,10 @@
     width: 100%;
     font-size: 2rem;
     font-weight: 100;
+}
+
+
+.btnHome{
+    border: solid variable.$span-text 3px;
+    background: none;
 }

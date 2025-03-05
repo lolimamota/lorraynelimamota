@@ -18,16 +18,22 @@ function home() {
             Hello!
           </h2>
           <h2 className={S.h2Home}>
-            I'm Lorrayne,
-          </h2>
+            I'm <span className={S.span}>Lorrayne</span> ,
+            </h2>
           <h2 className={S.h2Home}>
             a Front-end Developer
           </h2>
         </div>
         <p>
-          Currently located in Brazil, I love design and build Practical and Simple web pages.
+          Currently located in Brazil, I love design and build 
+          <span className={S.span}>
+          Practical
+          </span> and 
+          <span className={S.span}>
+          Simple
+          </span> web pages.
         </p>
-        <button>
+        <button className={S.btnHome}>
           Let's get started
         </button>
       </div>
