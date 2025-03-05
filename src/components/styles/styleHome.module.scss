@@ -18,8 +18,14 @@
 
 .videoHome{
     border: solid blue;
-    position: relative;
-    top: 0;
+    position: fixed;
+    top: 6vh;
     left: 0;
-    object-fit: contain;
+    object-fit: cover;
+    height: 94vh;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
 }
