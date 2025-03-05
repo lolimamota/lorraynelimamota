@@ -1,0 +1,16 @@
+@use './mixins/mixins.module.scss' as mixins;
+@use './mixins/variables.module.scss' as variable;
+
+.sectionHome{
+    @include mixins.flex($direction: column, $justify: center, $align: center);
+    height: 94vh;
+    border: solid red;
+
+    p{
+        border: solid blue;
+    }
+}
+
+.h2Home{
+    border: solid green;
+}

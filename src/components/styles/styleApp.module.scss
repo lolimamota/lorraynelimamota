@@ -23,4 +23,5 @@
     @include mixins.flex($direction: row, $justify: space-around, $align: center);
     width: 100%;
     font-size: 2rem;
+    font-weight: 100;
 }
