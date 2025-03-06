@@ -35,3 +35,13 @@
 .span{
     color: variable.$span-text;
 }
+
+
+
+.btnHome{
+    border: solid variable.$span-text 3px;
+    background: none;
+    color: variable.$text-color;
+    padding: 1rem;
+    cursor: pointer;
+}
