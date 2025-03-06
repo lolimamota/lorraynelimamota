@@ -28,8 +28,7 @@ function home() {
           Currently located in Brazil, I love design and build 
           <span className={S.span}>
           Practical
-          </span> and 
-          <span className={S.span}>
+          </span> and <span className={S.span}>
           Simple
           </span> web pages.
         </p>
