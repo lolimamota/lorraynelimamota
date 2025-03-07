@@ -13,7 +13,7 @@ function home() {
         <source src={BgMobile} type='video/mp4' />
       </video>
       <div className={S.content}>
-        <div className={S.h2Home}>
+        <div className={S.divh2Home}>
           <h2 className={S.h2Home}>
             Hello!
           </h2>
@@ -25,8 +25,7 @@ function home() {
           </h2>
         </div>
         <p>
-          Currently located in Brazil, I love design and build 
-          <span className={S.span}>
+          Currently located in Brazil, I love design and build <span className={S.span}>
           Practical
           </span> and <span className={S.span}>
           Simple
