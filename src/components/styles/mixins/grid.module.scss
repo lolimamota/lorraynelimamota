@@ -1,5 +1,0 @@
-@mixin grid($area-name, $grid-area){
-    .#{$area-name} {
-        grid-area: $grid-area;
-    }
-}

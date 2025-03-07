@@ -24,7 +24,7 @@ function home() {
             a Front-end Developer
           </h2>
         </div>
-        <p>
+        <p className={S.paragraph}>
           Currently located in Brazil, I love design and build <span className={S.span}>
           Practical
           </span> and <span className={S.span}>

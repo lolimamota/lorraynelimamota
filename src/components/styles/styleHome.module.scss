@@ -35,12 +35,6 @@
     height: 94vh;
 }
 
-.content{
-    position: relative;
-    z-index: 1;
-    @include mixins.flex($direction: column, $justify: center, $align: center, $gap: 8rem);
-}
-
 .span{
     color: variable.$span-text;
 }
@@ -53,4 +47,17 @@
     color: variable.$text-color;
     padding: .5rem;
     cursor: pointer;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+    // @include mixins.flex($direction: column, $justify: center, $align: center, $gap: 8rem);
+    display: grid;
+    grid-template-areas: 
+    "divh2Home ." 
+    "paragraph paragraph "
+    "btnHome btnHome ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
