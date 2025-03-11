@@ -1,15 +1,7 @@
-h1{
-    font-size: clamp(2rem, 4vw, 4rem);
-}
+$fonth1: clamp(2rem, 3vw, 3.5rem);
 
-h2{
-    font-size: clamp(1.5rem, 3vw, 3rem);
-}
+$fonth2: clamp(1.8rem, 3vw, 2.5rem);
 
-h3{
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
-}
+$fonth3: clamp(1.5rem, 3vw, 2.2rem);
 
-p{
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-}
+$fontp: clamp(1.5rem, 3vw, 2rem);

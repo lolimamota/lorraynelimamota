@@ -1,11 +1,13 @@
 @use './mixins/mixins.module.scss' as mixins;
 @use './mixins/variables.module.scss' as variable;
+@use './mixins/tipography.module.scss' as font;
 
 .sectionHome {
     @include mixins.flex($direction: column, $justify: center, $align: center);
     height: 94vh;
     border: solid red;
     overflow: hidden;
+    font-size: font.$fonth2;
 }
 
 .videoHome {
@@ -52,6 +54,7 @@
         //MORE CONFIGS
         color: variable.$text-color;
         text-align: center;
+        font-size: font.$fontp;
     }
 
     .btnHome {
@@ -66,5 +69,6 @@
         padding: .5rem;
         cursor: pointer;
         font-weight: 100;
+        font-size: font.$fonth3;
     }
 }
