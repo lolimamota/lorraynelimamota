@@ -1,32 +1,14 @@
 @use './mixins/mixins.module.scss' as mixins;
 @use './mixins/variables.module.scss' as variable;
 
-.sectionHome{
+.sectionHome {
     @include mixins.flex($direction: column, $justify: center, $align: center);
     height: 94vh;
     border: solid red;
     overflow: hidden;
-
-    p{
-        border: solid blue;
-        width: 45%;
-        color: variable.$text-color;
-        text-align: center;
-    }
 }
 
-.divh2Home{
-    width: 60%;
-    @include mixins.flex($align: flex-start, $direction: column, $gap: 2rem, $justify: center);
-}
-
-
-.h2Home{
-    border: solid green;
-    color: variable.$text-color;
-}
-
-.videoHome{
+.videoHome {
     position: fixed;
     top: 6vh;
     left: 0;
@@ -35,29 +17,54 @@
     height: 94vh;
 }
 
-.span{
+.span {
     color: variable.$span-text;
 }
 
 
-
-.btnHome{
-    border: solid variable.$span-text 3px;
-    background: none;
-    color: variable.$text-color;
-    padding: .5rem;
-    cursor: pointer;
-}
-
-.content{
+.content {
+    width: 100%;
+    height: 94vh;
     position: relative;
     z-index: 1;
-    // @include mixins.flex($direction: column, $justify: center, $align: center, $gap: 8rem);
     display: grid;
-    grid-template-areas: 
-    "divh2Home ." 
-    "paragraph paragraph "
-    "btnHome btnHome ";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+
+    .divh2Home {
+        //GRID CONFIG
+        grid-column: 1/6;
+        grid-row: 1/2;
+
+        //MORE CONFIGS
+        color: variable.$text-color;
+        gap: 1rem;
+    }
+
+    .paragraph {
+        //GRID CONFIG
+        grid-column: 2/5;
+        grid-row: 2/3;
+
+        //MORE CONFIGS
+        color: variable.$text-color;
+        text-align: center;
+    }
+
+    .btnHome {
+        // GRID CONFIG
+        grid-column: 2/5;
+        grid-row: 3/4;
+
+        //MORE CONFIGS
+        border: solid variable.$span-text 3px;
+        background: none;
+        color: variable.$text-color;
+        padding: .5rem;
+        cursor: pointer;
+        font-weight: 100;
+    }
 }
