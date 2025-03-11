@@ -2,7 +2,9 @@ import React from 'react'
 
 function projects() {
   return (
-    <div>projects</div>
+    <section>
+      <h1><span>Skills</span> and Tools</h1>
+    </section>
   )
 }
 

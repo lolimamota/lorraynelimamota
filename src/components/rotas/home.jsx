@@ -1,5 +1,8 @@
 import React from 'react'
 
+//IMPORT DE NAVEGAÇÃO
+import { useNavigate } from 'react-router-dom';
+
 //IMPORT MEDIA
 import BgMobile from "../../assets/video/bgMobile.mp4";
 
@@ -7,6 +10,14 @@ import BgMobile from "../../assets/video/bgMobile.mp4";
 import S from '../styles/styleHome.module.scss';
 
 function home() {
+
+  //NAVIGATE
+  const navigate = useNavigate();
+
+  const goProject = () =>{
+    navigate('/projects')
+  }
+
   return (
     <section className={S.sectionHome}>
       <video autoPlay muted loop className={S.videoHome}>
@@ -31,7 +42,7 @@ function home() {
           Simple
           </span> web pages.
         </p>
-        <button className={S.btnHome}>
+        <button className={S.btnHome} onClick={goProject}>
           Let's get started
         </button>
       </div>
