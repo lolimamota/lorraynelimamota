@@ -1,5 +1,8 @@
 import React from 'react'
 
+//IMPORT IMAGES
+import Mapa from "../../assets/img/wordcloud.png";
+
 function projects() {
   return (
     <section>
